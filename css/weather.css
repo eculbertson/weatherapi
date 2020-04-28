@@ -1,0 +1,115 @@
+body, html {
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px auto;
+    font-family: 'Alata', sans-serif;
+}
+
+#wrapper{
+	text-align: center;
+	margin: 0px auto;
+    padding: 0px auto;
+    margin-top:-20px;
+	min-height: 100%;
+    background: linear-gradient(to bottom, #E0F8F1, #58FAF4);
+    background-size: cover;
+    color:black;
+    background-repeat:no-repeat;
+}
+
+h2{
+	font-family: 'Atalis', sans-serif;
+	padding-top:20px;
+}
+
+#gridHeader{
+	display:grid;
+	grid-template-columns: repeat(3,1fr);
+	justify-items: center;
+}
+
+.inputBox{
+	text-align: center;
+	line-height: 2;
+}
+
+button{
+	height:75px;
+	width:150px;
+	background-color: #F2F2F2;
+	border:none;
+	border-radius: 20px;
+	box-shadow: 5px 5px #BDBDBD;
+	transition-duration: 0.4s;
+}
+
+#currentWeather:hover{
+	height:80px;
+	width:155px;
+	box-shadow: 6px 6px #BDBDBD;
+}
+
+#fiveDayForecast:hover{
+	height:80px;
+	width:155px;
+	box-shadow: 6px 6px #BDBDBD;
+}
+
+#buttons{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	align-items: center;
+	justify-items: center;
+	padding:20px;
+}
+
+#forecastContainer{
+	margin-top:20px;
+}
+
+#current{
+	display: grid;
+	grid-template-columns: repeat(1,1fr);
+	text-align: center;
+	justify-items:center;
+	opacity: 0;
+}
+
+#fiveDay{
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	justify-items:center;
+	text-align: center;
+	opacity: 0;
+}
+
+#error{
+	display: grid;
+	grid-template-columns: 1,1fr;
+	justify-items:center;
+	text-align: center;
+}
+
+.forecastSection{
+	width:200px;
+	line-height:2;
+}
+
+.animateFade{
+	opacity: 1;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-delay: 1s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}

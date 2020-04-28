@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "utf-8">
+    <link rel = "stylesheet" type = "text/css" href = "css/weather.css">
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet"> 
+	<title>Weather App</title>
+</head>
+
+<body>
+    <div id = "wrapper">
+        <h2>Weather Report Courtesy of OpenWeatherAPI</h2>
+
+    	<div id = "gridHeader">
+        	<div class = "inputBox"><p>Please input your city name:<br> <input type = "text" id = "city"></p></div>
+            <div class = "inputBox"><p>Input your state (if applicable):<br> <input type = "text" id = "state"></p></div>
+            <div class = "inputBox"><p>Input your country as an abbreviation:<br> <input type = "text" id = "country"> <br>(Find country codes <a href = "https://developer.yahoo.com/flurry/docs/api/countrycodes/" target = "_blank">here</a>.)</p></div>
+    	</div>
+
+        <div id = "buttons">
+            <button id = "currentWeather">Current Weather</button>
+            <button id = "fiveDayForecast">Five Day Forecast</button>
+        </div>
+
+        <div id = "forecastContainer">
+        	<div id = "current"></div>
+            <div id = "fiveDay"></div>
+        	<div id = "error"></div>
+        </div>
+    </div>
+
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">//Connects to the Weather API.</script>
+
+    <script src = "js/weather.js">//Controls functions on the page.</script>
+</body>
+</html>
